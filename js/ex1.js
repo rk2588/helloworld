@@ -1,2 +1,7 @@
-const input = prompt("Enter a number:"); // input's type is string
-const nb = Number(input); // nb's type is number
+const number = Number(prompt("Enter a number from 1-100:"));
+if ((number >= 0) && (number <= 100)) {
+  console.log(`Thank you! You entered ${number}, a valid number.`);
+}
+else if ((number < 0) || (number > 100)) {
+  console.log(`Sorry, ${number} is not a valid entry.`);
+}
